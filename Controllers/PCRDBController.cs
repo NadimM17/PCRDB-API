@@ -11,6 +11,7 @@ namespace PrincessConnectUnitDBAPI.Controllers
     [ApiController]
     public class PCRDBController : ControllerBase
     {
+        //This connection string is for a db I am hosting locally on my PC which I will attach the db backup file to it
         public const string connectionString = @"Data Source=NADIM\INSTANCE_2K19_TR;Initial Catalog=PrincessConnect;User ID=sa;Password=U4yO%2eHhEs%";
 
         [HttpGet]
@@ -145,6 +146,7 @@ namespace PrincessConnectUnitDBAPI.Controllers
             }
         }
 
+        //This method currently does not function properly.
         [HttpPost]
         [Route("AddUnit")]
         public void AddUnit()
